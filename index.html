@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Company-Prototype</title>
+    <link href="./CSS/style.css" rel="stylesheet">
+    <script src="./js/utils.js"></script>
+    <script src="./js/Employee.js" defer></script>
+    <script src="./js/Company.js" defer></script>
+    <script src="./js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+<div>
+    <h1>Employees ADD Station</h1>
+</div>
+<div>
+    <label>ID
+        <input type="text" id="empId" maxlength="9">
+    </label>
+    <label>First Name
+        <input type="text" id="empName">
+    </label>
+    <label>Last Name
+        <input type="text" id="empLName">
+    </label>
+    <label>Birth Date
+        <input type="date" id="empDate">
+    </label>
+    <label>Salary
+        <input type="number" id="empSalary" min="5000" max="50000" pattern="0-5">
+    </label>
+    <label>Position
+        <select id="empPosition" onchange="alert(this.value)">
+            <option value="">Choose Position</option>
+            <option value="Director">Director</option>
+            <option value="Manager">Manager</option>
+            <option value="FullStack Developers">FullStack Developers</option>
+            <option value="Back-end Developers">Back-end Developers</option>
+            <option value="Front-End Developers">Front-End Developers</option>
+            <option value="Test-zone">Test-zone</option>
+            <option value="Mechanic-zone">Mechanic-zone</option>
+            <option value="Electric-zone">Electric-zone</option>
+            <option value="Food-zone">Food-zone</option>
+            <option value="Cleaning-zone">Cleaning-zone</option>
+            <option value="Delivery-zone">Delivery-zone</option>
+            <option value="Call-center">Call-center</option>
+        </select>
+    </label>
+</div>
+<div>
+    <button id="addEmp">Add new Employee</button>
+    <button id="calcStats">Get Info about Employee</button>
+</div>
+<div id="stats">
+    <h2>Stats</h2>
+</div>
+<div>
+    <h2>Employees</h2>
+    <ol id="employeesList"></ol>
+</div>
+<div>
+    <a href="http://localhost:63342/CompanyPrototype/index.html?_ijt=7obautdgkbulap9khohqglkqmq&_ij_reload=RELOAD_ON_SAVE">
+        <button id="resetButton">Reset This Page</button>
+    </a>
+</div>
+<footer>
+    <div>
+
+    </div>
+</footer>
+</body>
+</html>
